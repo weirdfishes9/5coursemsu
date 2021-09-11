@@ -1,3 +1,12 @@
+Class ComplexNumber {
+public:
+	void SetRe(const double& x);
+	void SetIm(const double& x);
+private:
+	double Re;
+	double Im;
+}
+
 constexpr ComplexNumber Conjugate(const ComplexNumber& x) {
 	ComplexNumber res;
 	res.SetRe(x.GetRe());
